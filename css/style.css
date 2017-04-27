@@ -7,7 +7,7 @@ body, html {
 }
 
 h1, h2 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1 {
@@ -23,8 +23,16 @@ h2 {
     color: #49516B;
 }
 
-h2.white {
-    color: #FFFFFF;
+.white {
+    color: #FFFFFF !important;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.margin-bottom-big {
+    margin-bottom: 80px;
 }
 
 p, a {
