@@ -260,7 +260,7 @@ a:active {
 
 .slide-3,
 .slide-4 {
-    padding: 80px 0 40px;
+    padding: 80px 50px 40px;
 }
 
 .slide-3 h2 {
@@ -268,7 +268,7 @@ a:active {
 }
 
 .service {
-    padding: 0 60px;
+    padding: 0 50px;
 }
 
 .service:first-child {
@@ -425,6 +425,7 @@ a:active {
 
 .cloud-btn.subscribe {
     height: 50px;
+    min-width: 76px;
     font-size: 16px;
     padding: inherit;
     background: #FFFFFF;
@@ -437,30 +438,21 @@ a:active {
 }
 
 @media (max-width: 1199px) {
+    .slide-1 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .slide-1 .description-text, .slide-5 .description-text {
+        max-width: 60%;
+    }
+
     .navbar.navbar-default .container-fluid {
         padding-left: 4%;
         padding-right: calc(4% - 18px);
     }
 }
 
-@media (max-width: 991px) {
-    .navbar.navbar-default .navbar-brand .menu-item {
-        display: none;
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-    .no-left-padding {
-        padding-left: 0 !important;
-    }
-
-    .clients {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .advantage:nth-child(odd) {
         padding-left: 10%;
     }
@@ -468,86 +460,15 @@ a:active {
     .advantage:nth-child(even) {
         padding-right: 10%;
     }
-}
 
-@media (min-width: 991px) {
     .footer-inner {
         padding: 0;
     }
 }
 
-@media (max-width: 767px) {
-    .navbar.navbar-default {
-        height: 80px;
-    }
-
-    .navbar.navbar-default .navbar-brand {
-        margin: 15px 0;
-    }
-
-    .navbar-default .navbar-toggle {
-        padding-top: 10px;
-        border: none;
-        margin: 18px 0 12px;
-    }
-
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
-        background: transparent;
-    }
-
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #FFFFFF;
-        width: 40px;
-        margin-bottom: 10px;
-        height: 2px !important;
-    }
-
-    .navbar.navbar-default .container-fluid {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .slide-1, .slide-2,
-    .slide-3, .slide-4,
-    .slide-5 {
-        text-align: left;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .slide-1 .description-text, .slide-5 .description-text,
-    .description-text {
-        max-width: none;
-    }
-
-    .slide-1 {
-        padding: 40px 50px 60px;
-    }
-
-    .slide-2, .slide-5 {
-        text-align: center;
-    }
-
-    .slide-2 .top-description {
-        text-align: left;
-    }
-
-    .slide-2 .cloud-btn {
-        margin-top: 60px;
-    }
-
-    .slide-2, .slide-3,
-    .slide-4, .slide-5 {
-        padding: 60px 50px;
-    }
-
-    .slide-3 {
-        padding-bottom: 0;
-    }
-
-    .slide-5 .top-description {
-        text-align: left;
+@media (max-width: 991px) {
+    .navbar.navbar-default .navbar-brand .menu-item {
+        display: none;
     }
 
     .service {
@@ -567,7 +488,141 @@ a:active {
     .advantage {
         display: block;
         text-align: center;
+        padding-bottom: 50px;
+    }
+    .advantage .description {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .advantage {
+        float: left;
+    }
+    .no-left-padding {
+        padding-left: 0 !important;
+    }
+
+    .clients {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar.navbar-default {
+        height: 66px;
+    }
+
+    .navbar.navbar-default .navbar-brand {
+        margin: 8px 0;
+    }
+
+    .navbar-default .navbar-toggle {
+        padding-top: 10px;
+        border: none;
+        margin: 11px 0 0;
+        background: transparent;
+    }
+
+    .nav.navbar-nav.navbar-right > li > a.menu-item {
+        background: linear-gradient(115.92deg, #0573E6 0%, #00ABFF 100%);
+        padding: 22px 20px 0;
+        height: 66px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+    .nav.navbar-nav.navbar-right > li:last-child > a.menu-item {
+        border-bottom: 3px solid #FFFFFF !important;
+    }
+    .nav.navbar-nav.navbar-right > li.active > a.menu-item {
+        background: linear-gradient(115.92deg, #0573E6 0%, #00ABFF 100%);
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        font-weight: 500;
+    }
+
+    .nav.navbar-nav.navbar-right > li:hover > a.menu-item {
+        color: #FFFFFF !important;
+    }
+
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background: transparent;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFFFFF;
+        width: 40px;
+        margin-bottom: 10px;
+        height: 2px !important;
+    }
+
+    .navbar-default .navbar-collapse {
+        border: none;
+    }
+
+    .navbar.navbar-default .container-fluid {
+        padding: 0;
+    }
+    .container-fluid>.navbar-header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .slide-1, .slide-2,
+    .slide-3, .slide-4,
+    .slide-5 {
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .slide-1 .description-text, .slide-5 .description-text,
+    .description-text {
+        max-width: none;
+        margin-bottom: 60px !important;
+    }
+
+    .slide-1 {
+        padding: 40px 50px 60px;
+    }
+
+    .slide-1 .content {
+        padding-top: 60px;
+    }
+
+    .slide-2, .slide-5 {
+        text-align: center;
+    }
+
+    .slide-2 .top-description {
+        text-align: left;
+    }
+
+    .slide-2 .cloud-btn {
+        margin-top: 60px;
+    }
+
+    .slide-2, .slide-3,
+    .slide-4, .slide-5 {
+        padding: 60px 50px;
+    }
+
+    .slide-3, .slide-4 {
+        padding-bottom: 10px;
+    }
+
+    .slide-5 .top-description {
+        text-align: left;
+    }
+
+    .advantage {
+        text-align: center;
         padding-bottom: 0;
+    }
+    .advantage .description {
+        text-align: center;
     }
 
     .advantage > img {

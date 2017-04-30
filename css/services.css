@@ -101,4 +101,9 @@ p {
         padding-left: 50px;
         padding-right: 50px;
     }
+    #contents .inline-img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        display: block;
+    }
 }
