@@ -133,8 +133,8 @@ a:active {
     padding-bottom: 35.5px;
 }
 
-.nav.navbar-nav.navbar-right > li:hover {
-    background-color: rgba(255, 255, 255, .2);
+.nav.navbar-nav.navbar-right > li:hover > .menu-item {
+    color: rgba(255, 255, 255, .88) !important;
     transition: .1s ease-in-out;
 }
 
@@ -539,10 +539,6 @@ a:active {
         background: linear-gradient(115.92deg, #0573E6 0%, #00ABFF 100%);
         border-bottom: 1px solid rgba(255, 255, 255, .2);
         font-weight: 500;
-    }
-
-    .nav.navbar-nav.navbar-right > li:hover > a.menu-item {
-        color: #FFFFFF !important;
     }
 
 
