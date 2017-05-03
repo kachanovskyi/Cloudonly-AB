@@ -413,11 +413,6 @@ a:active {
     color: rgba(255, 255, 255, 0.5);
 }
 
-#subscribeForm .mock-frame {
-    visibility: hidden;
-    display: none;
-}
-
 .subscribe-container p:not(.heading) {
     margin: 20px auto 0;
     display: inline-block;
